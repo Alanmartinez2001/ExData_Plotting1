@@ -18,7 +18,7 @@ consumo <- consumo %>%
 
 
 # Graph 2
-png(file = "plot2.png") # launch png device
+png(file = "plot2.png", width=480,height=480) # launch png device
 with(consumo, plot(gpa, xaxt="n", type="l", ylab= "Global Active Power (kilowatts)",
                    xlab=""))
 axis(1, labels = c("Thursday", "Friday", "Saturday"), at = c(0,1440,2880))
