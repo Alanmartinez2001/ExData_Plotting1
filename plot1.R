@@ -15,7 +15,7 @@ consumo<-fread("consumo/household_power_consumption.txt", sep = ";",
 
 
 # Graph 1
-png(file = "plot1.png") # launch png device
+png(file = "plot1.png", width=480,height=480) # launch png device
 consumo$gap <- as.numeric(consumo$Global_active_power)
 with(consumo, hist(gap, col="red", main="Global Active Power", 
                    xlab="Global Active Power (kilowatts)"))
