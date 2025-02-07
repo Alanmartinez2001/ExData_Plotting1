@@ -20,7 +20,7 @@ consumo <- consumo %>%
 
 
 # Graph 3
-png(file = "plot3.png") # launch png device
+png(file = "plot3.png", width=480,height=480) # launch png device
 with(consumo, plot(met1, xaxt="n", type="l", ylab= "Global Active Power (kilowatts)",
                    xlab=""))
 lines(consumo$met2, col="red")
