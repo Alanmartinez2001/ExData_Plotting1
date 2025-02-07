@@ -23,7 +23,7 @@ consumo <- consumo %>%
            grp=as.numeric(Global_reactive_power))
 
 
-png(file = "plot4.png") # launch png device
+png(file = "plot4.png", width=480,height=480) # launch png device
 
 # Set the number of rows of the aggregate graph
 par(mfrow=c(2,2))
